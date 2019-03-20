@@ -67,6 +67,15 @@ const ProdBuilder = (cards) => {
     cards.forEach((product) => {
         domString += `<div class="col-4 product">`;
         domString += `<h2>${product.title}</h2>`;
+        domString +=    `<div class="card">`;
+        domString +=        `<img src="..." class="card-img-top" alt="...">`;
+       // add card-header class and my titles and what not
+        domString +=        `<div class="card-body">`;
+        domString +=        `<h5 class="card-title">Card title</h5>`;
+        domString +=        `<p class="card-text">Some quick example text to build on the card title and make up the bulk ofcontent.</p>`;
+        domString +=        `<a href="#" class="btn btn-primary">Go somewhere</a>`;
+        domString +=    `</div>`;
+        domString += `</div>`;
         // domString += `<p>${product.description}</p>`;
         // domString += `<p>${product.imageUrl}</p>`;
         // domString += `<p>${product.size}</p>`;
